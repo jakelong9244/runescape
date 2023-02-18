@@ -56,5 +56,11 @@ def changeWorld(x):
     auto.click(clicks=2,interval=randomTiming(0.1,0.3))
     t.sleep(randomTiming(8,10))
 
+def checkWorld(x):
+    if x == 7 or x == 15 or x == 25 or x == 34 or x == 44 or x == 48 or x == 52 or x == 60:
+        return True
+    else:
+        return False
+
 def randomTiming(x,y):
     return r.uniform(x,y)

@@ -15,7 +15,7 @@ while stop is False:
     clickUg()
     if checkStock() is False:
         world += 1
-        if world == 7 or world == 15 or world == 25 or world == 34:
+        if checkWorld(world) is True:
             world += 1
         changeWorld(world)
     else:
